@@ -1,0 +1,87 @@
+// --------------------------------------------------
+// Tabs
+// --------------------------------------------------
+
+.tabs {
+  background: rgba($white, .9);
+  border-radius: .4rem;
+}
+
+.tabs__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__item {
+  @include transition(background, 0.15s, linear);
+
+  border-bottom: .1rem solid rgba($black, .1);
+  cursor: pointer;
+  font-size: $font-size-xs;
+  flex-grow: 1;
+  padding: 1.5rem 1rem 1.6rem;
+  text-align: center;
+
+  &:hover {
+    background: rgba($black, .1);
+    border-bottom: .2rem solid $nightRider;
+    padding-bottom: 1.5rem;
+  }
+
+  &:first-child {
+    border-radius: .4rem 0 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 .4rem 0 0;
+  }
+
+  &.active {
+    border-bottom: .2rem solid $nightRider;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.tabs__filter {
+  border-bottom: .1rem solid rgba($black, .1);
+  padding: 3.1rem 4.8rem 2.7rem;
+}
+
+.tabs__filter-label {
+  color: rgba($black, .9);
+  font-size: $font-size-xs;
+}
+
+.tabs__content {
+  padding: 3.2rem 0 3.2rem 1.6rem;
+}
+
+.tabs__info {
+  color: $jungleGreen;
+  width: 20rem;
+  margin-right: 1.6rem;
+  font-size: 0;
+}
+
+.tabs__info-icon {
+  display: inline-block;
+  margin-left: .8rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+
+  .icon {
+    font-size: $font-size-xxs;
+  }
+}
+
+.tabs__info-text {
+  display: inline-block;
+  font-size: $font-size-xs;
+  vertical-align: middle;
+}
+
+.tabs__content {
+  display: flex;
+}

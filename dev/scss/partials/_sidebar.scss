@@ -1,0 +1,82 @@
+// --------------------------------------------------
+// Sidebar
+// --------------------------------------------------
+
+.sidebar {
+  background: $bg-sidebar;
+  max-width: 50.8rem;
+  min-width: 32rem;
+  width: 100%;
+
+  @include screen-lg {
+    max-width: 44.4rem;
+  }
+}
+
+.sidebar__section {
+  border-bottom: .1rem solid rgba($white, .2);
+  padding-bottom: 1.1rem;
+
+  &--header {
+    padding: 1.9rem 1.6rem 1.5rem;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.sidebar__section-title {
+  color: rgba($white, .9);
+  padding: 0 1.6rem;
+  font-size: $font-size-xxs;
+  line-height: 2;
+}
+
+.sidebar__item {
+  @include transition(background, 0.15s, linear);
+
+  align-items: center;
+  color: $white;
+  display: block;
+  font-size: 0;
+  padding: 1.2rem 1.6rem;
+
+  &:hover {
+    background: $bg-hover;
+
+    .sidebar__item-title {
+      color: $color-text-hover;
+      font-family: $robotoBold;
+    }
+  }
+
+  &.active {
+    background: $bg-hover;
+
+    .sidebar__item-title {
+      color: $color-text-hover;
+      font-family: $robotoBold;
+    }
+  }
+}
+
+.sidebar__item-img {
+  background: rgba($white, .6);
+  border-radius: 50%;
+  display: inline-block;
+  height: 4.8rem;
+  margin-right: 1.6rem;
+  width: 4.8rem;
+  vertical-align: middle;
+}
+
+.sidebar__item-title {
+  color: inherit;
+  display: inline-block;
+  font-size: $font-size-xs;
+  font-family: $robotoRegular;
+  line-height: 1.71;
+  vertical-align: middle;
+  width: calc(100% - 6.4rem);
+}

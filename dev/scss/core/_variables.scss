@@ -1,0 +1,56 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// Breakpoints
+// --------------------------
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 1156px !default;
+$screen-lg: 1360px !default;
+$screen-xlg: 1524px !default;
+
+// Colors
+// --------------------------
+
+// Black
+$black: #000;
+$nightRider: #303030;
+
+
+// White
+$white: #fff;
+
+// Green
+$jungleGreen: #26bf6e;
+
+// Yellow
+$gorse: #ffd840;
+
+
+// Colors names
+// --------------------------
+
+$bg-sidebar: $nightRider;
+$bg-hover: $gorse;
+$color-text-hover: $nightRider;
+
+// Font-family
+// --------------------------
+$fontPath: '../fonts/';
+$roboto: 'roboto';
+
+$robotoRegular: 'Roboto Regular', sans-serif;
+$robotoMedium: 'Roboto Medium', sans-serif;
+$robotoBold: 'Roboto Bold', sans-serif;
+
+// Font-size
+// --------------------------
+$font-size-xxs: 1.2rem;
+$font-size-xs: 1.4rem;
+$font-size-sm: 1.6rem;
+$font-size-md: 1.8rem;
+$font-size-lg: 2.4rem;
+$font-size-xlg: 3rem;
+$font-size-xxlg: 3.6rem;
+$font-size-xxxlg: 4rem;

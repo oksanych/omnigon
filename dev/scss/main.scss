@@ -1,0 +1,29 @@
+// --------------------------------------------------
+// Main scss
+// --------------------------------------------------
+
+// Core
+// --------------------------
+@import "core/normalize";
+@import "core/variables";
+@import "core/mixins";
+@import "core/fonts";
+@import "core/global";
+
+// Lib
+// --------------------------
+
+// Components
+// --------------------------
+@import "components/buttons";
+@import "components/forms";
+@import "components/tabs";
+@import "components/profile";
+
+// Partials
+// --------------------------
+@import "partials/sidebar";
+
+// SVG sprites
+// --------------------------
+@import "svg-sprites/svg-icons";

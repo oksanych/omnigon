@@ -1,0 +1,33 @@
+// --------------------------------------------------
+// Buttons
+// --------------------------------------------------
+
+.btn-wrap {
+
+  &--sidebar {
+    margin-top: 2.5rem;
+  }
+}
+
+.btn {
+
+  @include transition(background, 0.15s, linear);
+
+  background: rgba($white, .95);
+  border: .1rem solid $black;
+  border-radius: .4rem;
+  box-shadow: 0 0 .1rem 0 rgba($black, .2), 0 .1rem .2rem 0 rgba($black, .1);
+  color: opacify($black, .9);
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-xs;
+  line-height: 1.43;
+  padding: .6rem 3.4rem;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background: $bg-hover;
+    color: $color-text-hover;
+  }
+}
